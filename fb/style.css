@@ -1,0 +1,236 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(28, 30, 33);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100vw; /* vw nie vh debilu*/
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  border-radius: 100%; /* tu idk */
+  border: 10px solid rgb(85, 85, 85);
+  display: inline-block;
+}
+
+.change-photo {
+  padding: 5px;
+  background-color: rgba(88, 88, 88, 0.527);
+  border-radius: 100%;
+}
+
+.header {
+  display: flex;
+  font-size: 20px;
+  align-items: end;
+}
+
+body > .cala {
+  width: 800px;
+}
+
+.menu-list {
+  list-style: none; /* tu idk */
+  display: flex;
+  width: 500px;
+}
+
+.box-menu {
+  width: 800px;
+  display: flex;
+  background-color: rgb(85, 85, 85);
+  align-items: center;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none; /* Usunięcie domyślnego podkreślenia hiperłączy */
+  color: rgb(255, 255, 255); /* Ustawienie koloru tekstu na biały */
+  margin: 20px;
+}
+
+.nav {
+  display: inline-block;
+}
+
+a:hover {
+  color: rgb(155, 155, 155); /* Ustawienie koloru tekstu po najechaniu myszką */
+}
+
+.buttons {
+  width: 200px;
+  display: inline-block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Dodatkowe style dla przycisków */
+.buttons button {
+  background-color: rgb(155, 155, 155);
+  color: rgb(255, 255, 255); /* Ustawienie koloru tekstu na biały */
+  /* Ustawienie tła na przezroczyste */
+  border: none; /* Usunięcie obramowania przycisku */
+  cursor: pointer; /* Zmiana kursora na wskazujący, aby wskazywać na interaktywność */
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.name {
+  color: white;
+  display: inline;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline; /* Aby elementy były w jednej linii */
+  color: white;
+  font-size: 10px;
+}
+
+li:not(:last-child)::after {
+  content: "|"; /* Treść pseudo-elementu */
+  margin-left: 5px; /* Odstęp między kreską a kolejnym słowem */
+  color: #ffffff; /* Kolor kreski */
+}
+
+.buttons button:hover {
+  color: lightseagreen; /* Zmiana koloru tekstu po najechaniu myszką */
+}
+
+.left > .box {
+  background-color: rgb(85, 85, 85);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.box > h2 {
+  color: white;
+  margin: 5px;
+}
+
+.container {
+  width: 800px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left > .box > .photos > .photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.left .box .photos .photo:nth-child(1) {
+  background-color: lightblue;
+}
+.left .box .photos .photo:nth-child(2) {
+  background-color: lightcoral;
+}
+.left .box .photos .photo:nth-child(3) {
+  background-color: lightsteelblue;
+}
+.left .box .photos .photo:nth-child(4) {
+  background-color: lightgreen;
+}
+.left .box .photos .photo:nth-child(5) {
+  background-color: lightsalmon;
+}
+.left .box .photos .photo:nth-child(6) {
+  background-color: lightslategrey;
+}
+.left .box .photos .photo:nth-child(7) {
+  background-color: lightgray;
+}
+.left .box .photos .photo:nth-child(8) {
+  background-color: lightpink;
+}
+.left .box .photos .photo:nth-child(9) {
+  background-color: lightseagreen;
+}
+
+.content {
+  visibility: hidden;
+}
+
+.right > .box {
+  background-color: rgb(85, 85, 85);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.right > .box > .photos > .photo {
+  background-color: rgb(180, 179, 179);
+  border-radius: 0;
+  height: 140px;
+  margin: 1px;
+}
+
+.right > .box > .photos {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+
+.right > .box > .photos :nth-child(2) {
+  grid-column: 2/4;
+}
+
+.right > .box > .photos :nth-child(4) {
+  grid-column: 1/3;
+}
+
+.right > .box > .photos :nth-child(5) {
+  grid-column: 3/5;
+}
+
+.right > .box {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: 10px;
+  margin-top: 0;
+  color: white;
+  font-size: 12px;
+}
+
+h3 {
+  color: white;
+  margin-left: 10px;
+}
+
+/*jak to zrobic?????
+.right:nth-child(3) .photos:nth-child(4) {
+    grid-column: 1 / 5;
+}*/
+.left {
+  position: sticky;
+  top: 0; /* Utrzymuje lewą część na górze ekranu */
+  overflow-y: auto; /* Pozwala na przewijanie, jeśli zawartość jest dłuższa niż dostępna wysokość */
+  max-height: calc(100vh - 10px); /* Maksymalna wysokość lewej części */
+}
+
+.right {
+  overflow-y: auto;
+}/*# sourceMappingURL=style.css.map */
