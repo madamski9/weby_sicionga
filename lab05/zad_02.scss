@@ -1,0 +1,52 @@
+body {
+<<<<<<< HEAD
+    margin: 10px;
+    color: grey;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.box {
+    width: 100vh;
+    color: white;
+    flex: 1;
+    font-size: 8vh;
+    text-shadow: 5px 10px 0px rgba(188, 186, 186, 0.552);
+    text-align: center;
+}
+=======
+    margin: 5px;
+    background-color: gray;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+  }
+.box {
+    
+    color: white;
+    flex: 1;
+    font-size: 4vh;
+    text-shadow: 4px 4px 0px rgba(188, 186, 186, 0.552);
+    text-align: center;
+    flex: 0 0 auto;
+  }
+>>>>>>> 47e3b6f9c658bac221c8849b45648f1876df78ce
+
+$colors: violet, wheat, whitesmoke, yellow, yellowgreen, turquoise, tomato, thistle, teal, tan;
+
+$i: 1;
+@each $color in $colors{
+    .box-#{$i} {
+        background-color: $color;
+        }
+    $i: $i + 1
+    }
+
+
+

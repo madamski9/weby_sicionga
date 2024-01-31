@@ -1,0 +1,16 @@
+ul li li {
+    font-weight: bold;
+    list-style-type: lower-alpha;
+    color: green;
+
+}
+ul li li li {
+    list-style-type: square;
+    font-weight: normal;
+    color: blue;
+    
+}
+ul {
+    list-style-type: decimal;
+    color: red;
+}

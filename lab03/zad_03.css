@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    background-color: rgb(235, 224, 224);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 2px 0px 12px rgb(78, 78, 78);
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    letter-spacing: 12px;
+    text-align: center;
+    font-weight: 1000;
+    padding: 10px;
+    color: #535353;
+    z-index: 1000;
+}
+.container {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    align-items: center;
+}
+
+.section {
+    background-color: rgb(247, 241, 241);
+    position: relative;
+    top: 60px;
+    left: 160px;
+    width: 1000px;
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgb(173, 173, 173);
+    align-items: center;
+}
+form {
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(139, 139, 139);
+    letter-spacing: 2px;
+
+}
+fieldset {
+    height: 200px;
+    padding: 20px;
+    border: 2px solid rgb(214, 214, 214);
+}
+.form-group {
+    width: 450px;
+    line-height: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    color: #535353;
+}
+input {
+    width: 300px;
+    height: 20px;
+    border: 1px solid rgb(214, 214, 214);
+}
+button {
+    width: 70px;
+    height: 30px;
+    border-radius: 0;
+    border: 0px solid pink;
+    background-color: rgb(192, 191, 191);
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: white;
+    float: right;
+    margin-top: 40px;
+}
+.section {
+    padding: 20px;
+}
+table {
+    border-collapse: collapse; /* Łączy granice komórek tabeli */
+    border-spacing: 0;
+    padding: 40px;
+}
+th {
+    background-color: rgb(235, 224, 224);
+    padding: 10px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #535353;
+    text-align: left;
+}
+
+td {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #3f3e3e;
+    margin: 0;
+    padding: 10px;
+}
+tr:nth-child(odd) {
+    background-color: rgb(240, 233, 233); /* Kolor dla parzystych wierszy */
+  }
+  
+

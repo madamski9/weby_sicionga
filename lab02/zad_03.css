@@ -1,0 +1,63 @@
+body {
+    background-color: #F9F8F8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+.container > h1 {
+    color: green;
+}
+.wall {
+    text-align: center;
+}
+.wall > h1 {
+    color: #dddd03;
+    font-style:italic;
+    text-shadow: 2px 2px #640000;
+    
+}
+.strong {
+    font-weight: bold;
+}
+.strong > a {
+    color: brown;
+    text-decoration: none;
+}
+.container > h2 {
+    color: orangered;
+}
+
+.box {
+    color: dimgray;
+    background-color: white;
+    
+}
+.section > h3 > a {
+    
+    color: brown;
+    text-transform: uppercase;
+}
+.section {
+    background-color: #eee;
+}
+.item-1 {
+    background-color: lightgray;
+}
+.item-2 {
+    background-color: lightgreen;
+}
+.item-3 {
+    background-color: lightpink;
+}
+.item-4 {
+    background-color: lightsalmon;
+}
+.item-5 {
+    background-color: lightseagreen;
+}
+.item-6 {
+    background-color: lightskyblue;
+}
+.box-color {
+    color: white;
+    line-height: 2em;
+    font-size: 2em;
+}

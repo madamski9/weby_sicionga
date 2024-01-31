@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+#outer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
+  width: 10vh;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.box-1 {
+  align-self: flex-start;
+  background-color: lightgrey;
+}
+
+.box-2 {
+  background-color: grey;
+}
+
+.box-3 {
+  align-self: flex-end;
+  background-color: rgb(173, 172, 172);
+}
+
+section {
+  width: 600px;
+}/*# sourceMappingURL=zad_03.css.map */

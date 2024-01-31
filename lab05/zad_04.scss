@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.8px;
+  }
+  
+header {
+    color: white;
+    background-image: url('foggy.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 300px;
+}
+.header {
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline;
+   
+    
+}
+.nav {
+    padding: 10px;
+    height: 40px;
+    background-color: #00000061;
+    box-shadow: 5px 5px 5px #00000061;
+}
+.nav-items {
+    display: inline-block;
+    padding: 10px;
+    width: 90%;
+    
+    
+}
+li {
+    
+    display: inline-block;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.box {
+    display: flex;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box .title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.items{
+    width: 700px;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.item {
+    min-width: 25%;
+    
+    flex: 1;
+    padding: 5px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px #8e9074;
+    
+}
+.table {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.table .items .item .title {
+    font-size: 10px;
+    font-weight: bolder;
+    
+    padding: 5px;
+    
+}
+.table .items .item .description {
+    font-size: 8px;
+    padding: 4px;
+}
+.image {
+    background-color: #8e9074;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.date {
+    margin: 10px;
+    color: white;
+    font-size: 7px;
+    
+}
