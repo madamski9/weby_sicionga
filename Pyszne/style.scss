@@ -1,0 +1,169 @@
+@import 'variables'; //importowanie z _variables.scss
+
+body{
+    font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: $type-section-background;
+}
+
+header{
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.address{
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px; // przybliżanie linii >> im większe tym bliżej
+    border-bottom: 2px solid white; 
+    display: inline-block; // Ensures the border width matches the text
+    line-height: 1.5; // Decrease line-height to make it closer to the border if necessary
+}
+
+.buttons{
+    background-color: $type-section-background-2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-1{
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    line-height: 2;
+    color: $primary-color;
+    &:hover{ //po najechaniu na button
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    i.fas.fa-bars {  //i class
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.type-section{
+    display: grid;
+}
+
+.category-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.category-section > .active{
+    background-color: $primary-color;
+    color: white;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+}
+
+.category-section > button:last-child{
+    color: $primary-color;
+}
+
+.name{
+    padding: 25px 15px;
+    position: absolute;
+    left: 550px;
+    font-weight: bold;
+    color: $primary-color;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+}
+
+.pic {
+    height: 25px;
+}
+
+.info{
+    border: 2px solid $type-section-background-2;
+    width: 700px;
+    color: gray;
+    font-size: 13px;
+    .header{
+        color: gray;
+    }
+}
+
+.star {
+    color: $primary-color;
+    margin-right: 5px;
+    span {
+        color: gray; 
+      }
+  }
+
+.header{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.description{
+    font-size: 15px;
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-main-section{
+    .stars{
+        color: gray;
+    }
+}
+
+.left-main-section, .right-main-section {
+    padding: 0 80px;
+  }
+
+#search{
+    width: 600px;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid $type-section-background-2;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+}
