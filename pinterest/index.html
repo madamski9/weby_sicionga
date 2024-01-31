@@ -1,0 +1,123 @@
+<!-- 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  Ikony do użycia na stronie:
+
+  <i class="fab fa-pinterest"></i>
+  <i class="fa-solid fa-bell"></i>
+  <i class="fa-solid fa-comment"></i>
+  <i class="fa-solid fa-plus"></i>
+  <i class="fa-solid fa-question"></i>
+
+  Pod nagłówkiem strony, przed "zdjęciami", powinien być widoczny komunikat informujący o cookies. Cookies
+
+  Używamy plików cookie, aby wyświetlać spersonalizowane reklamy i treści oraz analizować ruch w naszej witrynie. Więcej informacji znajdziesz w naszym dokumencie Zasady dotyczące plików cookie.
+
+  gdzie ostatnie zdanie "Zasady dotyczące plików cookie" powinno być odsyłaczem. Zamiast linku, pod który powinno nastąpić przekierowanie możesz podać hash "#". Obok komunikatu powinny znajdować się trzy przyciski z tekstami kolejno:
+
+    Zaakceptuj wszystkie
+    Odrzuć wszystkie
+    Chcę wybrać samodzielnie
+
+  Każdy z wyżej wymienionych przycisków powinien mieć klasę secondary i to do niej należy się odwołać opisując styl przycisków. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>pinterest mini</title>
+</head>
+<body>
+    <header>
+      <div class="pint">
+        <i class="fab fa-pinterest"></i>
+      </div>
+      <button class="glowna">Strona główna</button>
+      <div class="input">
+        <input type="text" id="szukaj" name="Szukaj">
+        <div class="szukaj_text">Szukaj</div>
+      </div>
+      <div class="bell">
+        <i class="fa-solid fa-bell"></i>
+        <div class="powiadomienia">99+</div>
+      </div>
+      
+      <div class="comment">
+        <i class="fa-solid fa-comment"></i>
+      </div>
+      <div class="ikon">A</div>
+    </header>
+    <main>
+      <div class="cookie-message">
+        <div class="cookies">
+        Używamy plików cookie, aby wyświetlać spersonalizowane reklamy i treści oraz analizować ruch w naszej witrynie. Więcej informacji znajdziesz w naszym dokumencie <a href="#">Zasady dotyczące plików cookie</a>
+        </div>
+        <div class="cookie-buttons">
+            <button class="secondary">Zgadzam się</button>
+            <button class="secondary">Nie zgadzam się</button>
+            <button class="secondary">Dowiedz się więcej</button>
+        </div>
+      </div>
+      <div class="content">
+        <div class="column">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+        <div class="column">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+        <div class="column">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+        <div class="column">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+        <div class="column">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+        <div class="column">
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+          <div class="pic"></div>
+        </div>
+
+      </div>
+      <div class="sticky">
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-question"></i>
+      </div>
+    </main>
+</body>
+</html>
