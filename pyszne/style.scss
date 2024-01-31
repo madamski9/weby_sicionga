@@ -1,0 +1,214 @@
+body { 
+    font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    margin: 0;
+    margin-top: 115px;
+}
+button {
+    cursor: pointer;
+}
+@import "var";
+header {
+    width: 99%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+.logo span:first-of-type{
+    font-weight: bold;
+}
+.address {
+    border-bottom: 1px solid white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+header > div > button {
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 30px;
+    background-color: $primary-color;
+}
+.type-section {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 45px;
+    background-color: $type-section-background;
+}
+.type-section > .buttons > button {
+    border: none;
+    background: none;
+    color: black;
+    font-size: 10px;
+    padding: 10px;
+}
+.type-section {
+    display: flex;
+    justify-content: center;
+}
+.buttons  button:first-of-type {
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+
+.category-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+    top:70px;
+    z-index: 100;
+    
+}
+.category-section > button {
+    border: none;
+    margin: 10px;
+    background-color: white;
+}
+.category-section > .active {
+    background-color: $primary-color;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+.category-section > button:last-of-type {
+    border: none;
+    margin: 10px;
+    color: $primary-color;
+    font-weight: bold;
+}
+.main-section {
+    width: 100%;
+    display: flex;
+}
+.left-main-section {
+    position: sticky;
+    top: 115px;
+    overflow-y: auto; /* Pozwala na przewijanie, jeśli zawartość jest dłuższa niż dostępna wysokość */
+    max-height: calc(100vh - 115px); /* Maksymalna wysokość lewej części */
+    width: 25%;
+    margin-left: 200px;
+}
+.header {
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.stars {
+    color: lightgray;
+}
+label {
+    cursor: pointer;
+}
+.radio-button {
+    margin-top: 10px;
+}
+.right-main-section {
+    width: 45%;
+}
+.checkbox > input {
+    margin-top: 10px;
+}
+.search > input {
+    width: 80%;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid rgb(190, 190, 190);
+}
+.search > button {
+    border: none;
+    background-color: white;
+
+}
+.item  {
+    border: 1px solid lightgray;
+    display: flex;
+    align-content: start;
+    position: relative;
+    margin: 10px;
+}
+
+.pic {
+    display: inline-block;
+    width: 200px;
+    height: 120px;
+}
+.content {
+    font-size: 12px;
+}
+.content > div {
+    display: inline-block;
+    display: flex;
+    width: 150px;
+    align-items: center;
+}
+.content:nth-child(2) {
+    color: grey;
+}
+.content:nth-child(3) {
+    color: grey;
+}
+.star {
+    color: $primary-color;
+}
+.star > div > span {
+    color: grey;
+}
+.content > div > i {
+    display: inline-block;
+    margin-right: 10px;
+}
+.description {
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.item > .logo {
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    font-weight: bold;
+    color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name {
+    transform: skewY(-15deg);
+}
+.content {
+    width: 300px;
+    display: flex;
+}
+.info {
+    margin-left: 50px;
+}
+.info > .header {
+    color: grey;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+}
+@for $i from 2 through 12 {
+    $index: ($i - 2) % 8; // Odjęcie 2, aby rozpocząć od 0, ponieważ indeksy CSS są liczone od 1, a nie od 0
+    .item:nth-of-type(#{$i}) .pic {
+      background-color: nth($item-colors, $index + 1); // Dodanie 1, ponieważ funkcja nth() liczy od 1, a nie od 0
+    }
+}
+
