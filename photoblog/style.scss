@@ -1,0 +1,218 @@
+@import "var";
+body {
+    background-color: $background-color;
+    color: $white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+header {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    width: 96vw;
+    display: inline-block;
+    box-shadow: $box-shadow;
+    
+}
+button:hover {
+    cursor: pointer;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $logo-1;
+    display: inline-block;
+}
+.yellow {
+    display: inline-block;
+    color: $logo-2;
+}
+.log {
+    color: #333333;
+    background-color: $white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    right: 120px;
+}
+
+.konto {
+    position: absolute;
+    right: 30px;
+    color: $white;
+    background-color: $orange;
+    border: none;
+    border-radius: 5px;
+}
+.gora {
+    width: 96vw;
+    display: flex;
+    justify-content: center;
+}
+.up {
+    margin-top: 50px;
+    display: flex;
+    width: 80vw;
+    justify-content: end;
+    box-shadow: $box-shadow;
+}
+.word {
+    text-transform: uppercase;
+    font-size: 8px;
+}
+.text1 {
+    margin: 5px;
+}
+.text2 {
+    margin: 5px;
+}
+.text3 {
+    margin: 5px;
+}
+.number {
+    text-align: center;
+    font-weight: bold;
+}
+
+.down {
+    margin-top: 40px;
+    display: flex;
+}
+.lewa {
+    width: 50%;
+    align-content: center;
+    display: flex;
+    position: relative;
+    padding-left: 40px;
+    align-items: center;
+}
+.dół {
+    font-size: 8px;
+    position: absolute;
+    bottom: -20px;
+    left: 440px;
+
+}
+.photo {
+    display: inline-block;
+    background-color: $logo-1;
+    width: 500px;
+    height: 400px;
+}
+.prawo {
+    width: 18%;
+}
+.down {
+    display: flex;
+    justify-content: center;
+}
+.profil {
+    padding: 10px;
+    padding-top: 0px;
+    width: 100%;
+    background-color: $dark-gray;
+}
+.box {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.prof {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: $logo-1;
+}
+.imie {
+    font-size: 12px;
+    color: $logo-1;
+    padding: 2px;
+}
+.miasto {
+    font-size: 12px;
+    color: $logo-1;
+    padding: 2px;
+}
+.aboutme {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    width: 96%;
+    margin: 5px;
+}
+.sendmes {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    width: 96%;
+    margin: 5px;
+}
+.obserwuj {
+    background-color: $orange;
+    color: $white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 96%;
+    margin: 5px;
+}
+i {
+    margin: 2px;
+}
+.first {
+    margin: 5px;
+    background-color: $dark-gray;
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+}
+.left {
+    font-size: 8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 70px;
+    height: 70px;
+    text-transform: uppercase;
+    
+}
+.next {
+    height: 50px;
+    background-color: $dark-gray;
+    border: none;
+    color: $logo-1;
+    margin: 5px;
+}
+.next:hover {
+    color: $white;
+}
+  // Przycisk jasny (np. zaloguj się)
+  
+  // Kolor tekstu: #333333
+  // Kolor tła: $white
+  // Obramowanie: brak
+  // Zaokrąglenie krawędzi: niewielkie
+  
+  // Przycisk pomarańczowy (np. załóż konto)
+  
+  // Kolor tekstu: $white
+  // Kolor tła: $orange
+  // Obramowanie: brak
+  // Zaokrąglenie krawędzi: niewielkie
+  
+  // Przyciski poprzedniego i następnego zdjęcia
+  
+  // Kolor tekstu: rgba(211, 211, 211, 0.541)
+  // Kolor tła: $dark-gray
+  

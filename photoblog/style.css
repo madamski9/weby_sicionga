@@ -1,0 +1,225 @@
+@charset "UTF-8";
+body {
+  background-color: #333;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  width: 96vw;
+  display: inline-block;
+  box-shadow: 0 5px rgba(32, 32, 32, 0.3);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8b8b8b;
+  display: inline-block;
+}
+
+.yellow {
+  display: inline-block;
+  color: #fcc133;
+}
+
+.log {
+  color: #333333;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  right: 120px;
+}
+
+.konto {
+  position: absolute;
+  right: 30px;
+  color: white;
+  background-color: #ff3600;
+  border: none;
+  border-radius: 5px;
+}
+
+.gora {
+  width: 96vw;
+  display: flex;
+  justify-content: center;
+}
+
+.up {
+  margin-top: 50px;
+  display: flex;
+  width: 80vw;
+  justify-content: end;
+  box-shadow: 0 5px rgba(32, 32, 32, 0.3);
+}
+
+.word {
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+.text1 {
+  margin: 5px;
+}
+
+.text2 {
+  margin: 5px;
+}
+
+.text3 {
+  margin: 5px;
+}
+
+.number {
+  text-align: center;
+  font-weight: bold;
+}
+
+.down {
+  margin-top: 40px;
+  display: flex;
+}
+
+.lewa {
+  width: 50%;
+  align-content: center;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  align-items: center;
+}
+
+.dół {
+  font-size: 8px;
+  position: absolute;
+  bottom: -20px;
+  left: 440px;
+}
+
+.photo {
+  display: inline-block;
+  background-color: #8b8b8b;
+  width: 500px;
+  height: 400px;
+}
+
+.prawo {
+  width: 18%;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+}
+
+.profil {
+  padding: 10px;
+  padding-top: 0px;
+  width: 100%;
+  background-color: rgba(111, 111, 111, 0.3);
+}
+
+.box {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.prof {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #8b8b8b;
+}
+
+.imie {
+  font-size: 12px;
+  color: #8b8b8b;
+  padding: 2px;
+}
+
+.miasto {
+  font-size: 12px;
+  color: #8b8b8b;
+  padding: 2px;
+}
+
+.aboutme {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  width: 96%;
+  margin: 5px;
+}
+
+.sendmes {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  width: 96%;
+  margin: 5px;
+}
+
+.obserwuj {
+  background-color: #ff3600;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 96%;
+  margin: 5px;
+}
+
+i {
+  margin: 2px;
+}
+
+.first {
+  margin: 5px;
+  background-color: rgba(111, 111, 111, 0.3);
+  padding: 15px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.left {
+  font-size: 8px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 70px;
+  height: 70px;
+  text-transform: uppercase;
+}
+
+.next {
+  height: 50px;
+  background-color: rgba(111, 111, 111, 0.3);
+  border: none;
+  color: #8b8b8b;
+  margin: 5px;
+}
+
+.next:hover {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
