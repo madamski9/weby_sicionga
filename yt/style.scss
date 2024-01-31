@@ -1,0 +1,243 @@
+body { 
+    font-family: Roboto, Arial, sans-serif; 
+    margin: 0;
+    margin-top: 40px;
+    position: relative;
+}
+header {
+    padding-top: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: inline-block;
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    margin: 0;
+}
+button {
+    display: inline-block;
+}
+.start {
+    display: inline-block;
+}
+.start > button {
+    border-style: none;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+.logo > i {
+
+    display: inline-block;
+    color: red;
+}
+.logo > .name {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 100px;
+}
+.logo {
+    position: relative;
+    display: inline-block;
+}
+.pl {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+}
+.center {
+    position: relative;
+}
+.center > input {
+    width: 500px;
+    border: 1px solid lightgray;
+    padding: 10px;
+
+}
+.center > button {
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    border: 1px solid lightgray;
+    position: absolute;
+    right: 0px;
+}
+.end {
+    width: 570px;
+    display: flex;
+    justify-content: flex-end;
+}
+.end > button {
+    border: 1px solid white;
+    background-color: white;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.end > .login {
+    width: 160px;
+    border: 1px solid blue;
+    color: blue;
+}
+.login > i {
+    display: inline-block;
+}
+.login > div {
+    display: inline-block;
+}
+#left-section {
+    width: 260px;
+    overflow-y: auto;
+    height: 100vh;
+    position: fixed;
+    top: 40px;
+    z-index: 900;
+}
+ul > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul {
+    margin-top: 10px;
+    border-bottom: 1px solid lightgray;
+    padding: 0;
+}
+li > i {
+    font-size: 20px;
+    padding: 10px;
+
+}
+.login-info {
+    border-bottom: 1px solid lightgray;
+    margin: 10px;
+}
+.login {
+    width: 160px;
+    border: 1px solid blue;
+    color: blue;
+    background-color: white;
+    padding: 10px;
+}
+.login-info > .login {
+    margin: 10px;
+}
+.header {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: lightgrey;
+    margin: 20px;
+}
+#main-section {
+    top: 50px;
+    width: calc(100vw - 260px - 17px);
+    position: absolute;
+    right: 0;
+}
+.buttons {
+    width: 100vw;
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    top: 36px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    z-index: 990;
+    
+}
+.buttons > button {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 990;
+}
+.buttons > .active {
+    background-color: rgb(105, 105, 105);
+    color: white;
+
+}
+.main-movie-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid lightgray;
+    grid-gap: 18px;
+    background-color: rgb(236, 236, 236);
+}
+@import 'var.scss';
+.movie-frame {
+    width: 240px;
+    height: 160px;
+    
+}
+// Pierwsze 8 kolorowych movie-frame
+// Pierwsze 8 kolorowych movie-frame
+@for $i from 1 through 8 {
+  .main-movie-section:nth-child(n) .movie:nth-child(#{$i}) .movie-frame {
+    background-color: nth($movie-colors, $i);
+  }
+}
+
+// Szare movie-frame
+@for $i from 9 through 12 {
+  .main-movie-section:nth-child(n) .movie:nth-child(#{$i}) .movie-frame {
+    background-color: gray;
+  }
+}
+
+// Kolejne 8 kolorowych movie-frame
+@for $i from 13 through 20 {
+  .main-movie-section:nth-child(n) .movie:nth-child(#{$i}) .movie-frame {
+    background-color: nth($movie-colors, $i - 12);
+  }
+}
+
+  
+
+.movie {
+    margin: 10px;
+    position: relative;
+    z-index: 10;
+    height: 250px;
+}
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+}
+.avatar {
+    position: absolute;
+    top: 170px;
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+    background-color: grey;
+    border-radius: 100%;
+}
+.info {
+    
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 12px;
+    color: grey;
+}
+.movie-info {
+    width: 200px;
+    position: absolute;
+    top: 170px;
+    right: 0;
+}
+.main-movie-section > .header {
+    grid-column: 1 / 5;
+    text-transform: none;
+    font-weight: normal;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 0;
+}
