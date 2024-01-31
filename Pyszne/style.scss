@@ -3,7 +3,7 @@
 body{
     font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
-    background-color: $type-section-background;
+    background-color: white;
 }
 
 header{
@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    
+    align-items: center;
 }
 
 .logo{
@@ -31,7 +31,7 @@ header{
 }
 
 .buttons{
-    background-color: $type-section-background-2;
+    background-color: $type-section-background;
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -63,6 +63,7 @@ button{
 
 .type-section{
     display: grid;
+    background-color: $type-section-background;
 }
 
 .category-section{
@@ -101,6 +102,8 @@ button{
 
 .pic {
     height: 25px;
+    width: 25px;
+    background-color: #e1bbbb;
 }
 
 .info{
@@ -108,6 +111,7 @@ button{
     width: 700px;
     color: gray;
     font-size: 13px;
+    
     .header{
         color: gray;
     }
