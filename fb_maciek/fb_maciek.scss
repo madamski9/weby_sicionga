@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 2px solid white;
+    background-color: rgb(40, 41, 46);
+}
+.main{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+.header{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.profilowe{
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    border: 5px solid rgb(67, 69, 77);
+    border-radius: 200px;
+    margin-top: 20px;
+}
+.fa-camera{
+    position: relative;
+    margin: 74px;
+    border: 5px solid rgba(67, 69, 77, 0.403);
+    border-radius: 30px;
+}
+.name{
+    position: relative;
+    margin-top: 110px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.informations{
+    display: flex;
+    background-color: rgb(46, 53, 60);
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 6px;
+    padding: 5px;
+}
+.informations button{
+    border: none;
+    background-color: rgb(46, 53, 60);
+    color: white;
+}
+.left-informations{
+    flex: 1;
+    text-align: left;
+}
+.right-informations{
+    flex: 1;
+    text-align: right;
+}
+.right-informations button{
+    border: 2px solid rgb(77, 88, 100);
+    border-radius: 7px;
+    background-color: rgb(77, 88, 100);
+}
+.photos{
+    margin-top: 20px;
+    margin-right: 2rem;
+    margin-bottom: 200rem;
+    padding: 10px;
+    background-color: rgb(46, 53, 60);
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+}
+.row{
+    display: flex;
+}
+.photo-cubes{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid rgb(46, 53, 60);
+    border-radius: 10px;
+}
+.photos-name{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.main-section{
+    display: flex;
+}
+.main-section-posts{
+    margin-top: 1.2rem;
+}
+.first-post{
+    background-color: rgb(46, 53, 60);
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+}
+.first-post-cubes{
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid rgb(46, 53, 60);
+}
+.first-post-cubes2{
+    height: 150px;
+    width: 225.8px;
+    background-color: white;
+    border: 1px solid rgb(46, 53, 60);
+}
+.comment{
+    margin: 10px;
+}
+.second-post{
+    background-color: rgb(46, 53, 60);
+    margin-top: 20px;
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+    padding: 5px;
+}
+.post-header{
+    font-weight: bold;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+.third-post{
+    background-color: rgb(46, 53, 60);
+    margin-top: 20px;
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+    padding: 5px;
+}
+.second-post-cubes{
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid rgb(46, 53, 60);
+}
+.second-post-cubes2{
+    height: 150px;
+    width: 454px;
+    background-color: white;
+    border: 1px solid rgb(46, 53, 60);
+}
+.fourth-post{
+    background-color: rgb(46, 53, 60);
+    margin-top: 20px;
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+    padding: 5px;
+}
+.fourth-post-cube{
+    margin-top: 20px;
+    height: 150px;
+    width: 454px;
+    background-color: white;
+    border: 1px solid rgb(46, 53, 60);
+}
+
+.fifth-post{
+    background-color: rgb(46, 53, 60);
+    margin-top: 20px;
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+    padding: 5px;
+}
+.end{
+    background-color: rgb(46, 53, 60);
+    margin-top: 20px;
+    border: 1px solid rgb(46, 53, 60);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+}
+
+$colors : lightblue, lightcoral, lightsteelblue, lightgreen, lightsalmon, lightslategrey, lightgray, lightpink, lightseagreen;
+
+.main {
+    .main-section {
+      .photos {
+        .row {
+          @for $i from 1 through length($colors) {
+            .photo-cubes:nth-child(#{$i}) {
+              background-color: nth($colors, $i);
+            }
+          }
+        }
+      }
+    }
+  }
